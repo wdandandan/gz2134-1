@@ -1,0 +1,128 @@
+/* 头部 */
+header{
+    width:100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(102, 102, 102, 0.24);
+}
+nav{
+    width: 1200px;
+}
+.top-nav{
+    width:1200px;
+    padding:10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search .icon-location{
+    width:16px;
+    height:21px;
+    background: url(../image/location.png) no-repeat center;
+}
+.search span{
+    color:var(--text-color);
+    font:15px "微软雅黑";
+    padding:0px 20px 0px 6px;
+}
+.searchbox{
+    height:38px;
+    border:1px solid var(--main-color);
+    padding-left:44px;
+    border-radius: 19px 0px 0px 19px;
+    display: flex;
+    align-items: center;
+    background: url(../image/search.png) no-repeat 16px 10px;
+}
+.searchbox input[type="text"]{
+    border:none;
+    /* 设置外边框(轮廓)为none */
+    outline: none;
+    font:15px "微软雅黑";
+    color:var(--text-color);
+}
+.search button{
+    height: 40px;
+    border:none;
+    background-color:var(--main-color);
+    padding:0px 22px;
+    border-radius: 0px 20px 20px 0px;
+    color:white;
+    font:15px "微软雅黑";
+}
+.user a{
+    font:15px "微软雅黑";
+    margin-left:25px;
+    color:var(--text-color);
+}
+.user img{
+    vertical-align: middle;
+}
+/* 菜单栏 */
+.menu{
+    width:1200px;
+    display: flex;
+    margin:0 auto;
+}
+.menu li{
+    margin-right:50px;
+}
+.menu li a{
+    display: block;
+    font:20px "微软雅黑";
+    line-height: 50px;
+    color:var(--title-color);
+}
+
+/* 公共尾部 */
+/* 尾部区域 */
+footer{
+    margin-top:60px;
+    min-width:1200px;
+    background: #414141;
+}
+.bottom-list{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-list ul{
+    display: flex;
+}
+.bottom-list ul>li{
+    padding:30px 0px;
+    margin-right: 60px;
+}
+.bottom-list ul a{
+    color:white;
+    font:normal 20px "微软雅黑";
+}
+.bottom-list ul:last-child li{
+    margin:0px;
+    padding-left:60px;
+}
+.bottom-list ul:last-child a{
+    color:#939393;
+}
+.bottom-list ul:last-child li:first-child{
+    background: url(../image/icon.png) no-repeat -445px -99px;
+}
+.bottom-list ul:last-child li:last-child{
+    background: url(../image/icon.png) no-repeat -451px -228px;
+}
+hr.line{
+  border:none;
+  border-top:1px solid #666;
+}
+.copyright{
+    text-align: center;
+    font-size:12px;
+    padding-top:17px;
+    color:#999999;
+}
+.copyright p:last-child{
+    padding:17px 0px;
+}

@@ -1,0 +1,223 @@
+
+.menu li:nth-child(2) a,.menu li:hover a{
+    color:var(--main-color);
+    border-bottom:3px solid var(--main-color);
+}
+nav{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+nav a{
+    color: var(--title-color);
+}
+.nav-top{
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-top li:last-child a{
+    color: var(--text-color);
+}
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+.nav-list >li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    border-bottom:1px solid #f7f8fa;
+}
+.nav-list ul{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.n-list li{
+    margin-left:50px;
+}
+.n-list li:first-child{
+    width: 91px;
+    font:20px ;
+    color: var(--text-color);
+    margin-left:30px;
+}
+.nav-list li:nth-child(1) .n-list li:nth-child(2) a{
+    color: var(--main-color);
+}
+.nav-list li:nth-child(3) .n-list li:nth-child(2) a{
+    color: var(--main-color);
+}
+.nav-list li:nth-child(2) .n-list li:nth-child(4) a{
+    color: var(--main-color);
+}
+
+.school-litle{
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.school-litle .life{
+    width: 860px;
+    padding-left: 25px;
+    background: white;
+}
+.life-top{
+    display: flex;
+    padding: 30px 0px;
+    border-bottom:1px solid #f7f8fa;
+}
+.life-top li{
+    padding: 10px;
+}
+.life-top li:first-child{
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 10px;
+    background: var(--main-color);
+}
+.life-title li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+    border-bottom:1px solid #f7f8fa;
+}
+.life-title img{
+    margin-right: 25px;
+    border-radius: 15px;
+}
+.life-title div{
+    padding-top: 15px;
+}
+.life-title h3{
+    color:var(--title-color);
+    /* bold加粗 20px字体大小 50px行高 */
+    font:bold 20px "微软雅黑";
+}
+.stars{
+    display: flex;
+    padding:18px 0px;
+}
+.stars i{
+    width: 17px;
+    height: 17px;
+    background-image: url(../images/广州热门学校/star.jpg);
+    align-self: center;
+    padding-left: 3px;
+}
+.stars b{
+    font:normal 20px "微软雅黑";
+    color:#fec45a;
+}
+.course{
+    padding: 18px 0px;
+}
+p{
+    font-size: 18px;
+    color: var(--text-color);
+}
+.life-title a{
+    padding:0px 5px ;
+    color: var(--main-color);
+}
+.site{
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.site span{
+    font: 15px "微软雅黑";
+    padding:5px 7px;
+    color: rgb(255,118,76);
+    border:1px solid rgb(255,118,76);
+    border-radius: 5px;
+}
+.life-title li:first-child  span{
+    font: 15px "微软雅黑";
+    padding:5px 7px;
+    color: #f7f8fa;
+    background: rgb(255,118,76);
+    border-radius: 5px;
+}
+.life-foot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.life-foot a{
+    padding: 10px;
+    margin:0px 10px ;
+    color: var(--text-color);
+    border: 1px solid #f7f8fa;
+}
+.life-foot a{
+    color: var(--text-color);
+}
+.life-foot li:nth-child(3) a{
+    background: var(--main-color);
+    color: white;
+}
+.school-litle .right{
+    padding: 20px;
+}
+.right{
+    height: 645px;
+    background: white;
+}
+.right h4{
+    font: 20px "微软雅黑";
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.u1 img{
+    margin-right: 9px;
+}
+.right h5{
+    font:bold 14px "微软雅黑";
+}
+.u1 li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.u1 img{
+    width: 80px;
+    height: 60px;
+}
+.u1 .stars{
+    padding: 10px 0px;
+}
+.u1 .stars i{
+    background-size: 10px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+}
+.right b{
+    color:#fec45a;
+    font-size: 12px;
+}
+.u2 li{
+    padding-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.li1 p{
+padding: 0px 5px;
+}
+.right p{
+    font:12px "微软雅黑"; 
+}
+ .li1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+

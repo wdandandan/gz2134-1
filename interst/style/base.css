@@ -1,0 +1,23 @@
+:root{
+    /* 设置根元素的属性 */
+    /* 定义css全局变量 */
+    --main-color:#2ab8f5;
+    --text-color:#999999;
+    --title-color:#333;
+    background-color: #f7f8fa;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+.clearfix::before,.clearfix::after{
+    content:"";
+    display: block;
+    width:0px;
+    height:0px;
+    overflow: hidden;
+    clear: both;
+}
+*{
+    font-family: "微软雅黑";
+}

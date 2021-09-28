@@ -1,0 +1,503 @@
+/* @import "./reset.css";
+@import "./base.css"; */
+.menu li:first-child a,.menu li:hover a{
+    border-bottom:3px solid var(--main-color);
+}
+.wrapper{
+    width:100%;
+    /* 设置最小宽度为1200px */
+    min-width:1200px;
+    position: relative;
+    overflow: hidden;
+}
+.banner{
+    width:1200px;
+    height:500px;
+    margin:0 auto;
+}
+.banner img{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+.dot{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:15px;
+    z-index:1;
+}
+.dot span{
+    display: inline-block;
+    width:8px;
+    height:8px;
+    cursor: pointer;
+    vertical-align: middle;
+    background:var(--text-color);
+    border-radius: 50%;
+}
+.dot span:first-child{
+    width:10px;
+    height:10px;
+    background: var(--main-color);
+}
+.wrapper i.left,.wrapper i.right{
+    position: absolute;
+    width:50px;
+    height:50px;
+    z-index:2;
+    top:50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.wrapper i.left{
+    /* 距离父容器左边的一半 */
+    left:50%;
+    /* 往左移动1200/2=600px + 自己宽度50px */
+    margin-left:-650px;
+    background: url(../image/left.png);
+}
+.wrapper i.right{
+    left:50%;
+    margin-left:600px;
+    background: url(../image/right.png);
+}
+
+/* 热门学校推荐 */
+.hot-school{
+    width: 100%;
+    background: white;
+}
+.hot-school >div{
+     margin:0 auto;
+    width:1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    padding: 40px 0px;
+}
+/* 热门学校左边 */
+.hot-school .left{
+    width:895px;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.title div{
+    display: flex;
+}
+.title h2{
+    font-size:40px;
+    color:var(--title-color);
+}
+.title span{
+    font-size:25px;
+    margin-left:16px;
+    color:var(--text-color);
+    align-self: flex-end;
+}
+.title a{
+    color:var(--main-color);
+    font-size:20px;
+    align-self: center;
+}
+/* 热门学校列表 */
+.school-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.school-list li{
+    width:282px;
+    margin-top:24px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(102, 102, 102, 0.24);
+    background-color: #fff;
+}
+.school-list li>div{
+    padding:20px 15px; 
+}
+.school-list h5{
+    color:var(--title-color);
+    /* bold加粗 20px字体大小 50px行高 */
+    font:bold 20px "微软雅黑";
+}
+.stars{
+    display: flex;
+    padding:15px 0px;
+}
+.stars i{
+    width:17px;
+    height:17px;
+    background: url(../images/广州热门学校/star.jpg);
+    align-self: center;
+    padding-left: 3px;
+}
+.stars span{
+    font:normal 20px "微软雅黑";
+    color:#fec45a;
+}
+.blue{
+    font: 15px "微软雅黑";
+    color: white;
+    width: 64px;
+    padding: 0px 10px;
+    background:var(--main-color);
+    border-radius: 5px;
+}
+.school-list li p{
+    font:15px "微软雅黑";
+    color:var(--text-color);
+    padding-top: 15px;
+}
+/* 热门学校右边 */
+.hot-school .right{
+    width:257px;
+    padding:0px 10px 0px 18px;
+    align-self: flex-end;
+}
+.title2{
+    display: flex;
+    justify-content: space-between;
+}
+.title2 h3{
+    color:var(--title-color);
+    font:bold 30px "微软雅黑";
+}
+.title2 a{
+    align-self: center;
+    color:var(--main-color);
+    font:15px "微软雅黑";
+}
+.plan-list li{
+    margin-top:27px;
+}
+.plan-list li:first-child{
+    margin-top:20px;
+}
+.plan-list a{
+    display: block;
+    margin-bottom:15px;
+    color:#666666;
+    font:bold 20px "微软雅黑";
+}
+.plan-list a i{
+    font:normal 15px "微软雅黑";
+    color:white;
+   background:#ff764c;
+    padding:1px 3px;
+    margin-left:5px;
+    border-radius: 5px;
+}
+.plan-list li span{
+    color:var(--text-color);
+    font:15px "微软雅黑";
+}
+/* 热门兴趣课 */
+.intrerst-class{
+    padding:20px;
+    width:100%;
+    min-width:1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.intrerst-class >div{
+    margin: 0px auto;
+}
+.title-top{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.title-top div{
+    display: flex;
+}
+.title-top h2{
+    font-size:40px;
+    color:var(--title-color);
+}
+.title-top span{
+    font-size:25px;
+    margin-left:16px;
+    color:var(--text-color);
+    align-self: flex-end;
+}
+.title-top a{
+    color:var(--main-color);
+    font-size:20px;
+    align-self: center;
+    align-self: flex-end;
+}
+.class-litle ul{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.class-litle li{
+    width: 282px;
+}
+
+.class-litle li div{
+    padding-top: 20px; 
+}
+.class-litle i{
+    font: bold 25px "微软雅黑";
+    
+}
+.class-litle p{
+    color: var(--text-color);
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+/* 家长种草推荐 */
+.recommend{
+    background: white;
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recommend >div{
+    width: 1200px;
+    margin: 60px auto;
+}
+.recommend-top{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.recommend-top div{
+    display: flex;
+}
+.recommend-top h2{
+    font-size:40px;
+    color:var(--title-color);
+}
+.recommend-top a{
+    color:var(--main-color);
+    font-size:20px;
+    align-self: center;
+    align-self: flex-end;
+}
+.recommend-litle ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    border-radius: 15px;
+}
+.recommend-litle li{
+    position: relative;
+    margin-bottom: 24px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(102, 102, 102, 0.24);
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 282px;
+    margin:0 auto;
+    background: white;
+    border-radius: 15px;
+}
+img.f1{
+    width: 282px;
+    height: 200px;
+}
+.info1{
+    position: relative;
+    top: -30px;
+    left: 20px;
+    width: 136px;
+    font: bold 18px "宋体";
+}
+.info1 >img{
+    width: 50px;
+    height: 50px;
+}
+span.f1{
+    display: flex;
+    align-self: flex-end;
+}
+.info .cate{
+    text-align: right;
+    width: 70px;
+    background: var(--main-color);
+    font: 15px "微软雅黑";
+    color: white;
+    padding:5px 10px ; 
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; ;
+    position: absolute;
+    right: 0;
+    top:185px;
+}
+#s{
+    line-height: 23px;
+    color: hsl(0, 0%, 60%);
+    margin:auto 15px;
+    position: relative;
+    top: -20px;
+}
+
+/* 直播试听课 */
+.look-class{
+    width:100%;
+    min-width:1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.look-class >div{
+    margin: 60px auto;
+}
+.look-top{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.look-top div{
+    display: flex;
+}
+.look-top h2{
+    font: bolder 40px "微软雅黑";
+    color:var(--title-color);
+}
+.look-top a{
+    color:var(--main-color);
+    font-size:20px;
+    align-self: flex-end;
+}
+.look-litle ul{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.look-litle li{
+    width: 282px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.look-litle li div{
+    padding-top: 20px; 
+}
+.look-litle i{
+    font: bold 25px "微软雅黑";
+    
+}
+.look-litle p{
+    color: var(--text-color);
+    font-size: 19px;
+    margin-top: 12px;
+    padding: 5px;
+}
+.look-class i.i2-left,.look-class i.i2-right{
+    position: absolute;
+    width:50px;
+    height:50px;
+    z-index:2;
+    top:50%;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.look-class i.i2-left{
+    right: -10px;
+    left:50%;
+    margin-left:-660px;
+    background: url(../image/left2.jpg);
+}
+.look-class i.i2-right{
+    left:50%;
+    margin-left:610px;
+    background: url(../image/right2.jpg);
+}
+.teacher span{
+    margin-left: 15px;
+    font: bold 20px "微软雅黑";
+    color: var(--text-color);
+    position: relative;
+    top: -20px;
+}
+.teacher b{
+    font: bold 22px "微软雅黑";
+    color: rgba(20, 20, 20, 0.548);
+}
+/* 文章 */
+.article{
+    min-width: 1200px;
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    
+}
+.article >div{
+    margin: 0px auto;
+    padding-bottom:  60px;
+}
+.article-top{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.article-top h2{
+    font: bold 40px "微软雅黑";
+    color:var(--title-color);
+}
+.article-top a{
+    color:var(--main-color);
+    font-size:20px;
+    align-self: flex-end;
+}
+.article-litle ul{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.article-litle li{
+    width: 528px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 23px;
+    padding:25px 30px ;
+    display: flex;
+    box-shadow: 0 0 10px rgba(102, 102, 102, 0.24);
+}
+
+.article-litle li>div{ 
+    width: 320px;
+    padding-left:15px ;
+    display: flex;
+    flex-wrap:wrap;
+}
+.article-litle p{
+    color: var(--title-color);
+    font: bold 19px "微软雅黑";
+    margin-top: 12px;
+}
+div.zan{
+    align-self: flex-end;
+}
+.zan span{
+    margin-left: 15px;
+    font: bold 20px "宋体";
+    color: rgb(42, 184, 245);
+}
